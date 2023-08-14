@@ -5,7 +5,6 @@ import (
 	"html/template"
 	"log"
 	"net/http"
-	"time"
 )
 
 type Film struct {
@@ -31,7 +30,7 @@ func main() {
 
 	// handler function #2 - returns the template block with the newly added film, as an HTMX response
 	h2 := func(w http.ResponseWriter, r *http.Request) {
-		time.Sleep(1 * time.Second)
+		// time.Sleep(1 * time.Second)
 		title := r.PostFormValue("title")
 		director := r.PostFormValue("director")
 		// htmlStr := fmt.Sprintf("<li class='list-group-item bg-primary text-white'>%s - %s</li>", title, director)
