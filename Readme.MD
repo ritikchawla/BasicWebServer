@@ -14,7 +14,7 @@ Before running the web server, ensure you have Go installed on your machine. You
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/basic-web-server.git
+   git clone https://github.com/ritikchawla/BasicWebServer.git
    cd basic-web-server
    ```
   2.  Build and run the server:
